@@ -1,31 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>About Me</title>
         <!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<!-- link to icons -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="https://myu230.github.io./">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="https://myu230.github.io/Michelle-Yu-Resume.pdf" target="_blank" type="application/pdf" >CV</a></li>
+		<!-- nav -->
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a href="#" class="nav_logo">Michelle</a>
+
+				<div class="nav_btns">
+					<div class="nav_toggle" id="nav-toggle">
+						<i class='bx bx-menu' ></i>
+					</div>
+				</div>
+
+				<div class="nav_menu" id="nav-menu">
+					<i class="bx bx-x nav_close" id="nav-close"></i>
+					
+					<ul class="nav_list">
+						<li class="nav_item">
+							<a href="#home" class="nav_link">Home</a>
+						</li>
+						<li class="nav_item">
+							<a href="#about" class="nav_link">About</a>
+						</li>
+						<li class="nav_item">
+							<a class="nav_link" href="https://myu230.github.io/pdf/Michelle-Yu-Resume.pdf" target="_blank" type="application/pdf" >CV</a>
+						</li>
+					</ul>
+					
+				</div>
 				
-        		<!-- <li><a href="/blog">Blog</a></li> -->
-    		</ul>
-		</nav>
-		<div class="container">
+				
+			</nav>
+		</header>
+
+		<!-- main -->
+		<main class="main">
+			<section class="home section" id="home">
+				<div class="home_container container grid">
+					<div class="home_content grid">
+						<div class="home_social">
+							<a href="https://www.linkedin.com/in/myu230/" class="home_social-icon">
+								<i class='bx bxl-linkedin'></i>
+							</a>
+							<a href="https://github.com/myu230" class="home_social-icon">
+								<i class='bx bxl-github' ></i>
+							</a>
+							<a href="mailto:michelleyu230@gmail.com" class="home_social-icon">
+								<i class='bx bx-envelope' ></i>
+							</a>
+						</div>
+
+						<div class="home_data">
+							<h1 class="home_title">Hi there, I'm Michelle!</h1>
+							<h3 class="home_subtitle">Frontend Developer</h3>
+							<p class="home_description">All about me</p>
+						</div>
+
+						<textarea name="" id="" cols="30" rows="80"></textarea>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- <div class="container">
     		<div class="blurb">
         		<h1>Hi there, I'm Michelle!</h1>
-				<!-- <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p> -->
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
+				</div>
+		</div> -->
+
+		<!-- footer -->
 		<footer>
     		<ul>
         		<li><a href="mailto:michelleyu230@gmail.com">email</a></li>
         		<li><a href="https://github.com/myu230">github.com/myu230</a></li>
 			</ul>
 		</footer>
+
+		<!-- js -->
+		<script src="./main.js"></script>
 	</body>
 </html>

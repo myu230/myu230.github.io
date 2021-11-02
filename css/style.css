@@ -1,0 +1,253 @@
+:root{
+    --header-height: 3rem;
+
+    /* colours */
+    --accent-colour: hsl(199, 21%, 51%);
+    --accent-colour-dark: hsl(198, 23%, 41%);
+    --text-colour:  hsl(0, 0%, 20%);
+    --text-colour-light:  hsl(0, 0%, 60%);
+
+    /* fonts */
+    --font-header: 'Helvetica', 'Arial', 'Sans-Serif';
+    --font-body: 'Helvetica', 'Arial', 'Sans-Serif';
+
+
+    --large-font-size: 2rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+
+    --margin-large: 0.75rem;
+    --margin-medium: 0.5rem;
+    --margin-small: 0.25rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text-colour);
+    font-family:var(--font-body);
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-family:var(--font-header);
+}
+
+
+
+/* ============= reusable css classes ================ */
+.section{
+    padding: 2rem 0 4rem;
+}
+
+.section_title{
+    font-size:  var(--h2-font-size);
+}
+
+.section_subtitle{
+    display: block;
+    font-size: var(--h3-font-size);
+    margin-bottom: 3rem;
+}
+
+.section_title
+.section_subtitle{
+    text-align: center;
+}
+
+/* ============= layout ================ */
+.container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.header{
+    width: 100%;   
+    position: fixed;
+    z-index: 100;
+}
+
+/* ============= nav ================ */
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav_logo,
+.nav_link{
+    text-decoration: none;
+    color: var(--text-colour-light);
+    font-weight: bold;
+}
+
+.nav_toggle{
+    display: none;
+}
+
+.nav_close{
+    visibility: hidden;
+    display: none;
+}
+
+.nav_list {
+    font-family: var(--font-header);
+    padding: 0px;
+    list-style: none;
+}
+
+.nav_item{
+    display: inline;
+    margin-right: 30px;
+}
+
+
+.nav_logo:hover{
+    color: var(--text-colour);
+}
+
+.nav_link:hover{
+    color: var(--accent-colour-dark);
+}
+
+.nav_close:hover{
+    columns: var(--accent-colour-dark);
+}
+
+.nav_toggle:hover{
+    color: var(--accent-colour-dark);
+}
+
+@media screen and (max-width: 767px) {
+    .nav_menu{
+        position: fixed;
+        width: 100%;
+        top: 50px;
+        left: 100%;
+        background-color: white;
+        transition: .5s ease;
+
+    }
+
+    .nav_toggle{
+        display: inline;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        color: var(--text-colour-light);
+        font-weight: 500;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    .nav_close{
+        display: inline;
+        visibility: visible;
+        position: absolute;
+        right: 1.3rem;
+        bottom: .5rem;
+        font: 1.5rem;
+        cursor: pointer;
+        color: var(--text-colour-light);
+    }
+
+    .nav_list{
+        display: grid;
+        gap: 1.5rem;
+        /* grid-template-columns: repeat(3, 1fr);
+        gap: 2rem; */
+    }
+
+    .nav_link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--text-colour-light);
+    }
+}
+
+
+/* ============= show menu ================ */
+.show-menu{
+    left: 0;
+}
+
+/* ============= home ================ */
+.home_container{
+    gap: 1rem;
+}
+
+.home_content{
+    grid-template-columns: 0.5fr 3fr;
+    padding-top:  2rem;
+    align-items: center;
+}
+
+.home_social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home_social-icon{
+    font-size: 1.5rem;
+    color: var(--accent-colour);
+}
+
+.home_social-icon:hover{
+    color: var(--accent-colour-dark);
+}
+
+footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--text-colour-light);
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: var(--text-colour);
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
