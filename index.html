@@ -1,89 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>About Me</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       
+		<title>Michelle</title>
         <!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
 		<!-- link to icons -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 	</head>
 	<body>
 		<!-- nav -->
 		<header class="header" id="header">
 			<nav class="nav container">
-				<a href="#" class="nav_logo">Michelle</a>
+				<a href="#" class="nav__logo"> MY.</a>
 
-				<div class="nav_btns">
-					<div class="nav_toggle" id="nav-toggle">
-						<i class='bx bx-menu' ></i>
+				
+				<div class="nav__btns">
+					<div class="nav__toggle" id="nav-toggle">
+						<i class="bx bx-menu" id="toggle-icon"></i>
+						
 					</div>
 				</div>
 
-				<div class="nav_menu" id="nav-menu">
-					<i class="bx bx-x nav_close" id="nav-close"></i>
-					
-					<ul class="nav_list">
-						<li class="nav_item">
-							<a href="#home" class="nav_link">Home</a>
+
+				<div class="nav__menu" id="nav-menu">	
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#home" class="nav__link">Home</a>
 						</li>
-						<li class="nav_item">
-							<a href="#about" class="nav_link">About</a>
+						<li class="nav__item">
+							<a href="#about" class="nav__link">About</a>
 						</li>
-						<li class="nav_item">
-							<a class="nav_link" href="https://myu230.github.io/pdf/Michelle-Yu-Resume.pdf" target="_blank" type="application/pdf" >CV</a>
+						<li class="nav__item">
+							<a class="nav__link" href="https://myu230.github.io/pdf/Michelle-Yu-Resume.pdf" target="__blank" type="application/pdf" >CV</a>
 						</li>
 					</ul>
 					
 				</div>
-				
-				
 			</nav>
 		</header>
 
+		<!-- sidebar -->
+		<div class="sb__container container" id="sidebar__icons">
+			<div class="sb__social">
+				<a href="https://www.linkedin.com/in/myu230/" class="sb__social-icon">
+					<i class='bx bxl-linkedin'></i>
+				</a>
+				<a href="https://github.com/myu230" class="sb__social-icon">
+					<i class='bx bxl-github' ></i>
+				</a>
+				<a href="mailto:michelleyu230@gmail.com" class="sb__social-icon">
+					<i class='bx bx-envelope' ></i>
+				</a>
+			</div>
+			<div class="vline"></div>
+		</div>
+
 		<!-- main -->
 		<main class="main">
-			<section class="home section" id="home">
-				<div class="home_container container grid">
-					<div class="home_content grid">
-						<div class="home_social">
-							<a href="https://www.linkedin.com/in/myu230/" class="home_social-icon">
-								<i class='bx bxl-linkedin'></i>
-							</a>
-							<a href="https://github.com/myu230" class="home_social-icon">
-								<i class='bx bxl-github' ></i>
-							</a>
-							<a href="mailto:michelleyu230@gmail.com" class="home_social-icon">
-								<i class='bx bx-envelope' ></i>
-							</a>
-						</div>
 
-						<div class="home_data">
-							<h1 class="home_title">Hi there, I'm Michelle!</h1>
-							<h3 class="home_subtitle">Frontend Developer</h3>
-							<p class="home_description">All about me</p>
+			<section class="home section smaller">
+				<div class="home__container ">
+					<div class="home__image container">
+							<img src="images/programmer.svg" alt="image" id="home-img">
+					</div>
+					<div class="home__content">
+						<h1>Hi! My name is Michelle.</h1>
+						<h2>Software Developer</h2>
+						<p> I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.</p>
+					
+						<div class="home__buttons">
+							<a href="#" target="_blank" class="button button--flex">Contact Me</a>
 						</div>
-
-						<textarea name="" id="" cols="30" rows="80"></textarea>
 					</div>
 				</div>
 			</section>
+
+			<!-- <section class="home section" id="home">
+				<div class="home__container container grid">
+					<div class="home__contentph grid">
+						<div>
+							<i style="font-size: 11rem; font-weight: 100;" class="far fa-user-circle"></i>	
+						</div>
+						<div class="home__data">
+							<h1 class="home__title">Hello! My name is Michelle.</h1>
+							<h2 class="home__subtitle">Frontend Developer</h3>
+							<p class="home__description">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.</p>
+						</div>
+
+					</div>
+				</div>
+			</section> -->
+
+
+			<!-- projects -->
+
+			<section class="projects section" id="projects">
+				<h1 class="section__title">Projects</h1>
+				<div class="projects__container smaller container">
+					<div class="project__card">
+						<h2>Booking Applicaton</h2>
+						<p>Allows users to view their schedule and add appointments</p>
+						<div class="project__icon_container">
+							<!-- <a href="#" target="_blank" class="project__icon"><i class='bx bx-globe' ></i></a> -->
+							<a href="https://github.com/myu230/AppointmentBookingApp" target="_blank" class="project__icon"><i class='bx bxl-github' ></i></a>
+						</div>	</div>
+					<div class="project__card">
+						<h2>Student Management Application</h2>
+						<p>Allows users to track student performances in their classes</p>	
+						<div class="project__icon_container">
+							<!-- <a href="#" target="_blank" class="project__icon"><i class='bx bx-globe'></i></a> -->
+							<a href="https://github.com/myu230/Student-Profile-Manager" target="_blank" class="project__icon"><i class='bx bxl-github' ></i></a>
+						</div>
+					</div>
+					<div class="project__card">
+						<h2>Student Management Application</h2>
+						<p>Allows users to track student performances in their classes</p>	
+						<div class="project__icon_container">
+							<!-- <a href="#" target="_blank" class="project__icon"><i class='bx bx-globe'></i></a> -->
+							<a href="#" target="_blank" class="project__icon"><i class='bx bxl-github' ></i></a>
+						</div>
+					</div>
+		
+				</div>
+			</section>
+										
+			<!-- about me -->
+
+			<section class="about section " id="about">
+				<h1 class="section__title smaller">About Me</h1>
+				<div class="about__container smaller container grid">
+
+					<div class="about__data">
+						<p class="about__description"> I recently graduated from Seneca College with a diploma in Electronics Engineering Technology. I also grduated from University of Waterloo with a Bachelors of Science, with a minor in Chemistry and Economics. <br><br>
+							
+							Other than coding, I spend most of my free time playing Animal Crossing or Stardew Valley.	</p>
+
+						<div class="about__buttons">
+							<a href="https://myu230.github.io/pdf/Michelle-Yu-Resume.pdf" target="__blank" type="application/pdf" class="button button--flex">
+								View Resume<i class='bx bx-file btn__icon' ></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- skills -->
+
+			<section class="skills smaller section" id="skills">
+				<h1 class="section__title">Skills</h1>
+
+				<div class="skills__info">
+					<div class="skill__box"> 
+						<i class='bx bxl-javascript skills__icon' ></i>
+						<span class="skill__info-name"><br>Javascript</span>
+					</div>
+					<div class="skill__box">
+						<i class='bx bxl-html5 skills__icon' ></i>
+						<span class="skill__info-name"><br>HTML5</span>
+					</div>
+					<div class="skill__box">
+						<i class='bx bxl-css3 skills__icon' ></i>
+						<span class="skill__info-name"><br>CSS3</span>
+					</div>
+					<div class="skill__box">
+						<i class='bx bxl-react skills__icon' ></i>
+						<span class="skill__info-name"><br>React</span>
+					</div>
+					<div class="skill__box">
+						<svg class= "svg__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" data-name="Layer 1" viewBox="0 0 48 48"><path d="M42.91,10.92l-17-9.84a3.77,3.77,0,0,0-3.76,0l-17,9.84a3.75,3.75,0,0,0-1.87,3.25V33.83a3.75,3.75,0,0,0,1.87,3.25l17,9.84a3.77,3.77,0,0,0,3.76,0l17-9.84a3.75,3.75,0,0,0,1.87-3.25V14.17A3.75,3.75,0,0,0,42.91,10.92ZM23.7,37.15c-8.55,0-12.94-5.44-12.94-13s5-13.38,13.3-13.38c9.26,0,11.84,6.1,12,9H28.62c-.46-2.06-1.73-3.49-4.7-3.49-3.48,0-5.45,2.8-5.45,7.69,0,5.37,2.09,7.82,5.42,7.82a4.62,4.62,0,0,0,4.69-3.32h7.47C35.1,32.62,31.88,37.15,23.7,37.15Zm17.42-14h-1l-.3,1.23h.81v1.11H39.57l-.43,1.79h-1l.44-1.79H37.47L37,27.24H36l.44-1.79h-.78V24.34h1.06L37,23.11h-.85V22h1.12l.41-1.65h1L38.31,22h1.11l.4-1.65h1L40.41,22h.72Z"/><polygon points="37.74 24.34 38.84 24.34 39.14 23.11 38.04 23.11 37.74 24.34"/></svg>
+						<span class="skill__info-name"><br>C#</span>
+					</div>
+					<div class="skill__box">
+						<svg class= "svg__icon" xmlns="http://www.w3.org/2000/svg" width="2222" height="2500" preserveAspectRatio="xMinYMin meet" viewBox="0 0 256 288"><path  d="M255.569 84.72c-.002-4.83-1.035-9.098-3.124-12.761-2.052-3.602-5.125-6.621-9.247-9.008-34.025-19.619-68.083-39.178-102.097-58.817-9.17-5.294-18.061-5.101-27.163.269C100.395 12.39 32.59 51.237 12.385 62.94 4.064 67.757.015 75.129.013 84.711 0 124.166.013 163.62 0 203.076c.002 4.724.991 8.909 2.988 12.517 2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252 1.994-3.608 2.985-7.793 2.987-12.518 0 0 0-78.889-.013-118.345"/><path d="M128.182 143.509L2.988 215.593c2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252l-124.413-72.074"/><path  d="M91.101 164.861c7.285 12.718 20.98 21.296 36.69 21.296 15.807 0 29.58-8.687 36.828-21.541l-36.437-21.107-37.081 21.352"/><path  d="M255.569 84.72c-.002-4.83-1.035-9.098-3.124-12.761l-124.263 71.55 124.413 72.074c1.994-3.608 2.985-7.793 2.987-12.518 0 0 0-78.889-.013-118.345"/><path class="svg__fill" fill="#FFF" d="M248.728 148.661h-9.722v9.724h-9.724v-9.724h-9.721v-9.721h9.721v-9.722h9.724v9.722h9.722v9.721M213.253 148.661h-9.721v9.724h-9.722v-9.724h-9.722v-9.721h9.722v-9.722h9.722v9.722h9.721v9.721"/><path class="svg__fill" fill="#FFF" d="M164.619 164.616c-7.248 12.854-21.021 21.541-36.828 21.541-15.71 0-29.405-8.578-36.69-21.296a42.062 42.062 0 0 1-5.574-20.968c0-23.341 18.923-42.263 42.264-42.263 15.609 0 29.232 8.471 36.553 21.059l36.941-21.272c-14.683-25.346-42.096-42.398-73.494-42.398-46.876 0-84.875 38-84.875 84.874 0 15.378 4.091 29.799 11.241 42.238 14.646 25.48 42.137 42.637 73.634 42.637 31.555 0 59.089-17.226 73.714-42.781l-36.886-21.371"/></svg>
+						<span class="skill__info-name"><br>C++</span>
+					</div>
+					<div class="skill__box">
+						<i class='bx bxl-python skills__icon' ></i>
+						<span class="skill__info-name"><br>Python</span>
+					</div>
+					<div class="skill__box">
+						<i class='uil uil-database skills__icon'></i>
+						<span class="skill__info-name"><br>SQL</span>
+					</div>
+				</div>
+			</section>
+
+		<!-- Contact Me -->
+			<h1 class="section__title">Contact Me</h1>
+
+			<div class="contact__container container grid smaller">
+				<form action="" class="contact__form grid">
+					<div class="contact__content">
+						<label for="" class="contact__label">Name</label>
+						<input type="text" class="contact__input">
+					</div>
+					<div class="contact__content">
+						<label for="" class="contact__label">Email</label>
+						<input type="email" class="contact__input">
+					</div>
+					<div class="contact__content">
+						<label for="" class="contact__label">Message</label>
+						<textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+					</div>
+				</form>
+
+				<div>
+				<a href="#" class="button button--flex">Submit</a>
+				</div>	
+			</div>
+			
+
 		</main>
 
-		<!-- <div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Michelle!</h1>
-				</div>
-		</div> -->
-
+		
 		<!-- footer -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:michelleyu230@gmail.com">email</a></li>
-        		<li><a href="https://github.com/myu230">github.com/myu230</a></li>
-			</ul>
-		</footer>
+		<div class="footer__container" id="footer">
+			<div class="social__media">
+				<div class="social__media--wrap">
+					<div class="footer__logo">
+						<a href="#" id="footer__logo">Michelle Yu</a>
+					</div>
+				
+				</div>
+			</div>
+		</div>
 
 		<!-- js -->
 		<script src="./main.js"></script>
 	</body>
-</html>
+</html>	
+

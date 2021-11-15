@@ -2,26 +2,26 @@
 
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
-    navClose = document.getElementById('nav-close')
+    navBar = document.getElementById('header'),
+    sideBar = document.getElementById('sidebar__icons');
 
 
-// menu show
+// toggle menu
 if(navToggle){
     navToggle.addEventListener('click',()=>{
-        navMenu.classList.add('show-menu')
+        navMenu.classList.toggle('show-menu')
     })
 }
 
-// menu hidden 
-if(navClose){
-    navClose.addEventListener('click',()=>{
-        navMenu.classList.remove('show-menu')
-    })
-    
+navToggle.addEventListener('click', changeToggleIcon)
+
+function changeToggleIcon(){
+    document.getElementById('toggle-icon').classList.toggle("bx-x");
 }
+
 
 //remove menu
-const navLink = document.querySelectorAll('.nav_link')
+const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
@@ -30,3 +30,17 @@ function linkAction(){
 }
 
 navLink.forEach(n=> n.addEventListener('click', linkAction))
+
+//nav bar
+
+const navHeight = navBar.getBoundingClientRect().height;
+
+document.addEventListener('scroll',()=>{
+    if (window.scrollY > navHeight){
+        navBar.classList.add('nav__dark');
+    }else{
+        navBar.classList.remove('nav__dark');
+    }
+
+})
+
