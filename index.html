@@ -35,7 +35,13 @@
 							<a href="#home" class="nav__link">Home</a>
 						</li>
 						<li class="nav__item">
+							<a href="#projects" class="nav__link">Projects</a>
+						</li>
+						<li class="nav__item">
 							<a href="#about" class="nav__link">About</a>
+						</li>
+						<li class="nav__item">
+							<a href="#skills" class="nav__link">Skills</a>
 						</li>
 						<li class="nav__item">
 							<a class="nav__link" href="https://myu230.github.io/pdf/Michelle-Yu-Resume.pdf" target="__blank" type="application/pdf" >CV</a>
@@ -65,18 +71,18 @@
 		<!-- main -->
 		<main class="main">
 
-			<section class="home section smaller">
+			<section class="home section smaller" id="home">
 				<div class="home__container ">
 					<div class="home__image container">
-							<img src="images/programmer.svg" alt="image" id="home-img">
+						<img src="images/dev.svg" alt="image" id="home-img">
 					</div>
 					<div class="home__content">
 						<h1>Hi! My name is Michelle.</h1>
 						<h2>Software Developer</h2>
-						<p> I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.</p>
+						<p> I’m a software engineer.</p>
 					
 						<div class="home__buttons">
-							<a href="#" target="_blank" class="button button--flex">Contact Me</a>
+							<a href="#footer" class="button button--flex">Contact Me</a>
 						</div>
 					</div>
 				</div>
@@ -105,23 +111,39 @@
 				<h1 class="section__title">Projects</h1>
 				<div class="projects__container smaller container">
 					<div class="project__card">
-						<h2>Booking Applicaton</h2>
-						<p>Allows users to view their schedule and add appointments</p>
+						<div class="project__img">
+							<img src="images/computer.svg" alt="image">
+						</div>
+						<div class="project__info">
+							<h2>Booking Applicaton</h2>
+							<p>Allows users to view their schedule and add appointments</p>
+						</div>
 						<div class="project__icon_container">
 							<!-- <a href="#" target="_blank" class="project__icon"><i class='bx bx-globe' ></i></a> -->
 							<a href="https://github.com/myu230/AppointmentBookingApp" target="_blank" class="project__icon"><i class='bx bxl-github' ></i></a>
-						</div>	</div>
+						</div>	
+					</div>
 					<div class="project__card">
-						<h2>Student Management Application</h2>
-						<p>Allows users to track student performances in their classes</p>	
+						<div class="project__img">
+							<img src="images/computer.svg" alt="image">
+						</div>
+						<div class="project__info">
+							<h2>Student Management Application</h2>
+							<p>Allows users to track student performances in their classes</p>	
+						</div>
 						<div class="project__icon_container">
 							<!-- <a href="#" target="_blank" class="project__icon"><i class='bx bx-globe'></i></a> -->
 							<a href="https://github.com/myu230/Student-Profile-Manager" target="_blank" class="project__icon"><i class='bx bxl-github' ></i></a>
 						</div>
 					</div>
 					<div class="project__card">
-						<h2>Student Management Application</h2>
-						<p>Allows users to track student performances in their classes</p>	
+						<div class="project__img">
+							<img src="images/computer.svg" alt="image">
+						</div>	
+						<div class="project__info">
+							<h2>Student Management Application</h2>
+							<p>Allows users to track student performances in their classes</p>	
+						</div>
 						<div class="project__icon_container">
 							<!-- <a href="#" target="_blank" class="project__icon"><i class='bx bx-globe'></i></a> -->
 							<a href="#" target="_blank" class="project__icon"><i class='bx bxl-github' ></i></a>
@@ -133,9 +155,9 @@
 										
 			<!-- about me -->
 
-			<section class="about section " id="about">
+			<section class="about smaller section" id="about">
 				<h1 class="section__title smaller">About Me</h1>
-				<div class="about__container smaller container grid">
+				<div class="about__container">
 
 					<div class="about__data">
 						<p class="about__description"> I recently graduated from Seneca College with a diploma in Electronics Engineering Technology. I also grduated from University of Waterloo with a Bachelors of Science, with a minor in Chemistry and Economics. <br><br>
@@ -219,7 +241,6 @@
 
 		</main>
 
-		
 		<!-- footer -->
 		<div class="footer__container" id="footer">
 			<div class="social__media">
