@@ -3,18 +3,22 @@
     --header-height: 4.25rem;
 
     /* colours */
-    --background-colour: #323546;
+    --background-colour: rgb(255, 250, 250);
+    --background-colour-accent: rgb(255, 245, 244);
     --hover-colour-light: #b498b4;
-    --light-colour: #ffdada;
-    --accent-colour: #FBBEBE;
-    --accent-colour-light: #9A8C98;
+    --link-colour: #4A4E69;
+    --accent-colour: #e4afaf;
+    --accent-colour-light: #f3eaf1;
     --accent-colour-med: #5E5E75;
     --accent-colour-dark: #4A4E69;
     --accent-colour-darkest: #22223B;
-    --title-colour: #fff;
-    --text-colour:  #c0adc0;
+    --title-colour: #4A4E69;
+    --text-colour:  #5E5E75;
     --contact-colour: hsl(198, 20%, 76%);
 
+
+    /* #9A8C98 light purplegrey */
+    /* 4A4E69 purple */
     /* fonts */
     --font-header: 'Helvetica', 'Arial', 'Sans-Serif';
     --font-body: 'Karla', 'Sans-Serif';
@@ -80,7 +84,7 @@ img{
 }
 /* ============= reusable css classes ================ */
 .section{
-    padding: 6rem 0 4rem;
+    padding: 2rem 0 5rem;
 }
 
 .section__title{
@@ -121,6 +125,10 @@ img{
     background-color: var(--background-colour);
 }
 
+.accent__wrapper{
+    background-color: var(--background-colour-accent);
+}
+
 /* ============= nav ================ */
 .nav{
     height: var(--header-height);
@@ -148,7 +156,7 @@ img{
 
 .nav__logo,
 .nav__link{
-    color: var(--light-colour);
+    color: var(--link-colour);
 }
 
 .nav__toggle{
@@ -213,12 +221,16 @@ img{
 
 /* ============= colour change ================ */
 .nav__dark{
-    background-color: var(--accent-colour-dark);
+    background-color: var(--background-colour);
 }
 
 /* ============= show menu ================ */
 .show-menu{  
      top: var(--header-height);
+}
+
+#about, #projects, #about, #skills{
+    scroll-margin-top: 3rem;
 }
 
 /* ============= buttons ================ */
@@ -358,9 +370,10 @@ img{
 
 
 /* ============= about me ================ */
-.about{
-    background-color: var(--background-colour);
-}
+/* .about__wrapper{
+    background-color: var(--background-colour-accent);
+    padding: 2rem 0 5rem 0;
+} */
 
 .about__buttons{
     display: flex;
@@ -388,8 +401,8 @@ img{
 .project__card{
     margin: 1rem;
     border-color: var(--accent-colour);
-    background-color: var(--accent-colour-med);
-    box-shadow: 10px 10px var(--accent-colour-darkest);
+    background-color: var(--accent-colour-light);
+    box-shadow: 10px 10px var(--accent-colour-med);
     border-radius: 7px;
     border-style: solid;
     border-width: 3px;
