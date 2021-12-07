@@ -437,6 +437,21 @@ img{
     font-size: var(--normal-font-size);
 }
 
+.project__info ul{
+    display: flex;
+    padding: 0;
+    font-size: var(--normal-font-size);
+}
+
+.project__info li{
+  padding:  3px 7px;
+  margin-right: 5px;
+  background-color: var(--accent-colour);
+  border-radius: 2px;
+  color: white;
+}
+
+
 .project__icon_container{
     position: absolute;
     bottom: 10px;
