@@ -277,7 +277,7 @@ img{
 
 .sb__social-icon{
     font-size: 1.5rem;
-    color: var(--accent-colour);
+    color: var(--link-colour);
 }
 
 .sb__social-icon:hover{
@@ -286,7 +286,7 @@ img{
 
 .vline{
     margin-top: 1rem;
-    border-left: 2px solid var(--accent-colour);
+    border-left: 2px solid var(--link-colour);
     height: 80px;
 }
 
@@ -439,6 +439,7 @@ img{
 
 .project__info ul{
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     font-size: var(--normal-font-size);
 }
@@ -446,6 +447,7 @@ img{
 .project__info li{
   padding:  3px 7px;
   margin-right: 5px;
+  margin-bottom: 5px;
   background-color: var(--accent-colour);
   border-radius: 2px;
   color: white;
